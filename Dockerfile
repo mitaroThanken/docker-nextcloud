@@ -8,3 +8,7 @@ RUN apt-get update && apt-get install -y \
         fonts-noto-mono \
         fonts-noto-hinted && \
     rm -rf /var/lib/apt/lists/*
+
+RUN mkdir /mnt/cloudfuse
+
+VOLUME /mnt/cloudfuse
